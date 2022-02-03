@@ -1,8 +1,7 @@
 name: GitHub Actions Demo
 on:
-  push:
-    branches:
-      - master
+  pull_request:
+    types: [closed]
 jobs:
   merge-PR:
     if: github.event.pull_request.merged == true
