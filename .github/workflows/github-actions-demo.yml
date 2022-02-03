@@ -16,5 +16,5 @@ jobs:
           name: id_rsa
           known_hosts: ${{ secrets.KNOWN_HOSTS }}
       - name: rsync over ssh
-        run: sudo ./deploy.sh
+        run: sudo sh ./deploy.sh
 
